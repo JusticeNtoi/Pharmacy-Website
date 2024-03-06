@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+    
+body{
+    min-height: 100vh;
+}
+    
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #337983;
+}
+
+.heading {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+    
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+    
+.nav-links li {
+    list-style: none;
+}
+    
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+    
+.nav-links a:hover:not(.active) {
+    background-color: #4caf50;
+}
+    
+.nav-links li a.active {
+    background-color: #45a049;
+}
+
+    
+/* Cards */
+
+.header{
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+    
+.header h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #337983;
+}
+
+.products{
+    width: 100%;
+    align-self: center;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product{
+    position: relative;
+    background-color: #337983;
+    width: 350px;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2px;
+    transition: .3s;
+    display:inline-block;
+    margin-left: 75px;
+}
+
+.product:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.image{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width:100%;
+    height: 60%;
+    display: grid;
+    place-content: center;
+}
+
+.image img{
+    width: 240px;
+    }
+        
+.description{
+    color: white;
+    text-align: center;
+    margin-right: 10px;
+    }
+
+.medName h3{
+    font-size: 1.5em;
+    text-transform: capitalize;
+    color: white;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.medPrice span{
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    border: 3px solid #73AD21;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10%;
+}
+    
+.product p{
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.order-button{
+    border-radius: 2px;
+    border: none;
+    background-color: #45a049;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+    
+.order-button:hover{
+    transform: scale(1.1);
+    background-color: #4caf50;
+}
+
+.back{
+    margin-left: 5%;
+    font-size: 20px;
+    list-style-type: none;
+    margin-bottom: 2%;
+}
+
+.messages{
+    color:#337983;
+    margin-left: 5%;
+}
+
+/* Forms*/
+
+.first-box {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #337983;
+  padding: 10px;
+  color: #337983;
+  margin-bottom: 5%;
+}
+
+label{
+    color: #337983;
+    font-size: medium;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=email], input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;  
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pay{
+    margin-left: 5%;
+}
+
+
+.pay-button{
+    margin-left: 5%;
+    padding: 15px 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: #45a049;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
+    
+.pay-button:hover{
+    transform: scale(1.1);
+    background-color: #4caf50;
+}
+
+
+.messages{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  color: #337983;
+  margin-bottom: 2%;
+  text-align: center;    
+}
+/* Table  */
+
+.meds h1{
+    color: #337983;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+    margin-bottom: 50px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #337983;
+  color: white;    
+}
+        
